@@ -1,18 +1,19 @@
-x = matlab.graphics.axis.Axes;
-y = matlab.graphics.axis.Axes;
-z = matlab.graphics.axis.Axes;
-x = 0:pi/10:20*pi;
+x = 0;
 y = (x.^2).*sin(x);
 z = cos(x);
-% plotyy(x, y, x, z)
+[AX,h1ine1,hline2] = plotyy(x,y,x,z);
+grid on;
 
-axis equal
-for j=1:200
-%     x = 0:pi/10:20*pi;
-%     y = (x.^2).*sin(x);
-    plotyy(x,y,x, z)
-    %axis([-80,80,-80,80]);
-    M(:,j) = getframe;
+for t = 1: 200
+    x = [x (pi/10)*t];
+    y = [y ((pi/10)*t.^2).*sin((pi/10)*t)];
+    z = [z  cos((pi/10)*t)]; 
+    [AX,h1ine1,hline2] = plotyy(x,y,x,z);
+    grid on;
+    set(h1ine1,'LineWidth',2 ,'color','b');
+    set(hline2,'LineWidth',2 ,'color','r');  
+    drawnow
+    pause(0.01);
 end
-movie(M)
+
 
