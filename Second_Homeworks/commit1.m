@@ -5,7 +5,7 @@ clear all;
     使其成为二维矩阵（同时为了更好的观察）
 %}
 
-origin_picture=imread('dongguan.jpg');
+origin_picture=imread('dongguan.jpg'); %这里换成自己的图片名字
 figure(1);
 imshow(origin_picture);
 title('原始RGB图像')
