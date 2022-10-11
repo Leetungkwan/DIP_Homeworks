@@ -7,3 +7,7 @@ File name ：First_Homeworks
 
 ## my second homeworks commit in 2022/9/19
 File name ：Second_Homeworks
+
+
+## my third homeworks commit in 2022/10/11
+File name ：Third_Homeworks
