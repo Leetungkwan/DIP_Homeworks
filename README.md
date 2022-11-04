@@ -8,8 +8,8 @@
 
 ## my second homeworks commit in **2022/9/19**
 
- - > Folder name ：**Second_Homeworks** 
-       Fliename : commit1.m
+ - > Folder name ：**Second_Homeworks**   
+     Fliename : commit1.m
 
 ## my third homeworks commit in **2022/10/11**
 
