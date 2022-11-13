@@ -1,0 +1,15 @@
+clc
+clear all;
+g = imread('FigP0501(filtering).tif');
+f1 = spfilt(g,'hmean',3,3);
+figure(1)
+subplot(121),imshow(g),title('原图');
+subplot(122),imshow(f1),title('谐波平均（3×3）');
+
+f2 = spfilt(g,'hmean',7,7);
+figure(2)
+subplot(121),imshow(g),title('原图');
+subplot(122),imshow(f2),title('谐波平均（7×7）');
+
+
+
