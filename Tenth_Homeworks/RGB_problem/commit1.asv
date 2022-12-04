@@ -1,0 +1,14 @@
+close all;
+clc;
+clear;
+n = 100;    %图像 的大小为n*n你也可定义生成n*m,那下面变成 zeros(n, m)
+black = zeros(n, n);   
+% imshow(black);
+black(:,:,1) = 0.5;
+black(:,:,2) = 1;
+black(:,:,3) = 0.5;
+rgb_image=cat(3,black(:,:,1),black(:,:,2),black(:,:,3));
+imshow(rgb_image);
+
+
+%答案很明显，是l'b
