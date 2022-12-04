@@ -50,3 +50,10 @@
 ## add new directory 'Homework_Writing' in **2022/11/13**
 
  - >the directory save my handwriting homeworks which is about solutions after class.
+
+
+
+## my tenth homeworks commit in **2022/11/10**
+
+ - > Folder name ：**Tenth_Homeworks**  
+     Filename : commit.m
