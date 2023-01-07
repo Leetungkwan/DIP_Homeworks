@@ -1,0 +1,10 @@
+close all;
+clear,clc;
+inImg = 'gdut_01.jpg';
+f1 = ImgErose(inImg,'diamond');
+f2 = ImgErose(inImg,'disk');
+f3 = ImgErose(inImg,'octagon');
+figure(1),imshow(inImg);
+figure(2),imshow(f1),title('菱形结构元素处理');
+figure(3),imshow(f2),title('圆盘结构元素处理');
+figure(4),imshow(f3),title('八边形结构元素处理');

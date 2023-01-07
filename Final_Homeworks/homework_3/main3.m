@@ -1,0 +1,11 @@
+close all;
+clear,clc;
+inImg = 'bread.jpg';
+f1 = ImDenoise(inImg,'average');
+f2 = ImDenoise(inImg,'medan');
+figure(1),imshow(inImg);
+figure(2),imshow(f1),title('算术平均滤波结果');
+figure(3),imshow(f2),title('中值滤波结果');
+% subplot(311),imshow(inImg);
+% subplot(312),imshow(f1),title('算术平均滤波结果');
+% subplot(313),imshow(f2),title('中值滤波结果');
